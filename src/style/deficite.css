@@ -1,0 +1,55 @@
+table {
+    width: 100%; 
+    border-collapse: separate;
+     border-spacing: 4px;
+    }
+table thead tr {
+    color: #ffffff; 
+    font-weight: bold;
+}
+table thead tr td {
+    border-radius: 4px 4px 0 0; 
+    background: #2e82c3;
+}
+table tbody tr td {
+    border: 1px solid #2e82c3; 
+    border-radius: 4px; 
+    background: #cbdfef;
+}
+table tbody tr td:hover {
+    cursor: pointer;
+    background: #a2c3dd; 
+    transition-duration: 0.2s;
+}
+
+.table-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(121, 134, 138, 0.363);
+    margin: 10px 0 ;
+    height: 50px;
+}
+
+.table-nav input {
+    font-size: 20px;
+    width: 370px;
+    height: 90%;
+}
+
+.wrapper{
+    border: 1px solid red;
+}
+
+.heder__instruments{
+    border: 1px solid tomato;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+}
+
+.heder__buttons{
+    border: 1px solid green;
+
+}
+

@@ -1,0 +1,43 @@
+.tabContainer {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    border: 1px solid tomato;
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    z-index: 100000;
+    
+}
+
+p{
+    text-align: center;
+}
+
+
+
+
+/* .tabContainer .tab__panel-0 .tab__panel-1 .tab__panel-2 .tab__panel-3 {
+    height: 100vh;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding-top: 105px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 22px;
+
+} */
+
+.none {
+    display: none
+}
+
+.active {
+    display: block;
+}
+
+.buttons__botom{
+    position: relative;
+    bottom: 0;
+}
