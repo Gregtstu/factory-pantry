@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href=" ../style/main.css">
+    <link rel="stylesheet" href="../style/deficite.css">
+    <title>учет дефицитных ТМЦ</title>
+</head>
+
+<body>
+    <div class="et-hero-tabs-container">
+
+        <a class="et-hero-tab" href="admin.html">СОЗДАТЬ ПОЛЬЗОВАТЕЛЯ</a>
+        <a class="et-hero-tab btn__komplektovanie" href="komplektovanie.html">КОМПЛЕКТОВАНИЕ</a>
+        <a class="et-hero-tab btn__komplektovanie" href="kladovaya.html">КЛАДОВАЯ</a>
+        <a class="et-hero-tab btn__plan" href="plan.html">ПЛАН</a>
+        <a class="et-hero-tab deficite__tab btn__deficite" href="deficite.html">ДЕФИЦИТ</a>
+        <a class="et-hero-tab btn__exit" href="../index.html">ВЫЙТИ</a>
+        <span class="et-hero-tab-slider"></span>
+    </div>
+    <section class="et-slide deficite" id="deficite">
+        
+      <div class="table-nav">
+        <input type="serch" placeholder="Поск..." id="search-text">
+
+
+      </div>
+
+        <table style="width: 100%;" cellspacing="0">
+            <thead>
+                <tr>
+                    <td>п/н</td>
+                    <td>Наименовавание ПКИ</td>
+                    <td>Количество</td>
+                    <td>Первичный <br> заявочный документ</td>
+                    <td>Оплата</td>
+                    <td>срок поставки <br> в ОМА</td>
+                    <td>исполнитель</td>
+                </tr>
+            </thead>
+            <tbody>
+         
+        </tbody>
+        </table>
+    </section>
+  
+</body>
+<script src="../js/services/showDeficite.js" type="module"></script>
+<!-- <script src="../js/services/guard.js" type="module"></script> -->
+</html>

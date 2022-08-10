@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/kladovaya.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/reset.css">
+    <title>учет дефицитных ТМЦ</title>
+
+</head>
+
+<body>
+
+    <div class="et-hero-tabs-container">
+
+        <a class="et-hero-tab open-popup " href="admin.html">СОЗДАТЬ ПОЛЬЗОВАТЕЛЯ</a>
+        <a class="et-hero-tab btn__komplektovanie" href="komplektovanie.html">КОМПЛЕКТОВАНИЕ</a>
+        <a class="et-hero-tab btn__komplektovanie" href="kladovaya.html">КЛАДОВАЯ</a>
+        <a class="et-hero-tab plan__btn btn__plan" href="plan.html">ПЛАН</a>
+        <a class="et-hero-tab btn__deficite" href="deficite.html">ДЕФИЦИТ</a>
+        <a class="et-hero-tab btn__exit" href="../index.html">ВЫЙТИ</a>
+        <span class="et-hero-tab-slider"></span>
+    </div>
+    <section class="et-slide plan" id="plan">
+
+        <div class="table-nav">
+            <input type="serch" placeholder="Поск..." id="search-text">
+
+            <div class="wrapper">
+                <a href="#" class="open-popup">Добавить</a>
+            </div>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th width="50px">п/н</th>
+                    <th>наименование</th>
+                    <th>количество</th>
+                    <th>срок изготовления</th>
+                    <th>цех-заказчик</th>
+                    <th>документ-основание</th>
+                    <th>вид работы</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </section>
+
+
+    <!-- <script src="../js/services/guard.js" type="module"></script> -->
+    <script src="../js/compponents/showPlan.js" type="module"></script>
+</body>
+
+</html>

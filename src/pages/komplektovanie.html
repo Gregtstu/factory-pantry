@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/loading.css">
+    <link rel="stylesheet" href="../style/compl.css">
+    <link rel="stylesheet" href="../style/tab.css">
+    <link rel="stylesheet" href="../style/css.css">
+    <link rel="stylesheet" href="../style/main.css">
+
+    <title>учет дефицитных ТМЦ</title>
+</head>
+
+
+<body>
+
+    <div class="tabContainer none">
+        <div class="tabContainer">
+            <div class="buttonContainer">
+                <button onclick="showPanel(0,'#a0a5a8')">главная</button>
+                <button onclick="showPanel(1,'#a0a5a8')">имеющаяся комплектация</button>
+                <button onclick="showPanel(2,'#a0a5a8')">недостоющая комплектация</button>
+                <button onclick="showPanel(3,'#a0a5a8')">отсутствующая</button>
+          
+            </div>
+            <div class="tabPanel">
+                <div class="tab__panel-0">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam reprehenderit, eos impedit molestiae est temporibus beatae deleniti ratione error maiores modi ducimus ipsam vitae, libero, mollitia vel facere dolor ut.</p>
+                    <p>Отложено в комплектацию: <label>0</label>шт.</p>
+                    <p>Добавлено в дефицит: <label>0</label>шт.</p>
+                    <button class="report">отправить отчет</button>
+                    <button class="close">вернуться на стартовую страницу</button>
+                </div>
+            </div>
+            <div class="tabPanel">
+                <div class="tab__panel-1">
+                    <input type="serch">
+                    <button class="complite__panel-1">ГОТОВО</button>
+                </div>
+                
+            </div>
+            <div class="tabPanel">
+                <div class="tab__panel-2">
+                    <input type="serch">
+                    <button class="complite__panel-2">ГОТОВО</button>
+                </div>
+                
+            </div>
+            <div class="tabPanel">
+                <div class="tab__panel-3">
+                    <input type="serch">
+                    <button class="complite__panel-3">ГОТОВО</button>
+                </div>
+             
+        </div>
+     
+        </div>
+    </div>
+    <div class="et-hero-tabs-container">
+
+        <a class="et-hero-tab open-popup " href="admin.html">СОЗДАТЬ ПОЛЬЗОВАТЕЛЯ</a>
+        <a class="et-hero-tab komplektovanie__tab btn__komplektovanie" href="komplektovanie.html">КОМПЛЕКТОВАНИЕ</a>
+        <a class="et-hero-tab btn__komplektovanie" href="kladovaya.html">КЛАДОВАЯ</a>
+        <a class="et-hero-tab btn__plan" href="plan.html">ПЛАН</a>
+        <a class="et-hero-tab btn__deficite" href="deficite.html">ДЕФИЦИТ</a>
+        <a class="et-hero-tab btn__exit" href="../index.html">ВЫЙТИ</a>
+        <span class="et-hero-tab-slider"></span>
+    </div>
+
+    <section class="body">
+        <div class="main">
+            <div class="container a-container" id="a-container">
+                <form class="form" id="a-form" method="" action="">
+                    <h2 class="title title">форма заполнения</h2>
+                    <input class="form__input name" type="text" placeholder="наименование">
+                    <input class="form__input izdelie" type="text" placeholder="изделие">
+                    <input class="form__input zakaz" type="number" placeholder="номер заказа">
+                    <input class="form__input count" type="number" placeholder="количество">
+                    <input class="form__input norms" type="number" placeholder="норма часа">
+                    <input class="form__input srok" type="number" placeholder="срок изготовления">
+                    <input class="form__input ceh" type="text" placeholder="цех-заказчик">
+                    <input class="form__input document" type="text" placeholder="документ-основание">
+                    <p> <label class="check-box" for="1">
+                            <input type="radio" name="work" id="1"> изготовление
+                        </label>
+                        <label class="check-box" for="2">
+                            <input type="radio" name="work" id="2"> ремонт
+                        </label></p>
+                    <button class="form__button button  button-plan">добавить в план</button>
+                </form>
+            </div>
+            <div class="container b-container" id="b-container">
+                <form class="form-file" id="b-form" method="" action="">
+                    <h1 class="form__title title">добавить комплектацию</h1>
+                    <div class="example-1">
+                        <div class="form-group">
+                            <label class="label">
+                                <i class="material-icons">attach_file</i>
+                                <span class="title-file"></span>
+                                <input class="file" type="file" id="fileUpload" multiple>
+                            </label>
+                            <div class="report-modal"></div>
+                        </div>
+                    </div>
+                    <button class="form__button button submit file-btn" >СКОМПЛЕКТОВАТЬ</button>
+                    <div class="report-modal"></div>
+
+
+                    <div id="ExcelTable"></div>
+                </form>
+
+
+
+
+            </div>
+            <div class="switch" id="switch-cnt">
+                <div class="switch__circle"></div>
+                <div class="switch__circle switch__circle--t"></div>
+                <div class="switch__container" id="switch-c1">
+                    <h2>описание работы с формой</h2>
+                    <p class="switch__description description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Expedita, unde nihil alias rem, delectus aspernatur iusto perferendis ducimus illo rerum
+                        eligendi eos nostrum dolorem ratione dolor in natus esse quia.</p>
+                        <button class="switch__button button switch-btn">добавить <br> комплектацию</button>
+                </div>
+                <div class="switch__container is-hidden" id="switch-c2">
+                    <h2>описание работы с комплектацией</h2>
+                    <p class="switch__description description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Expedita, unde nihil alias rem, delectus aspernatur iusto perferendis ducimus illo rerum
+                        eligendi eos nostrum dolorem ratione dolor in natus esse quia.</p>
+                    <button class="switch__button button switch-btn">вернуться <br> к форме</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    
+
+
+    
+<script src="../js/compponents/report.js" type="module"></script>
+<script src="../js/components/upLoaded.js" type="module"></script>
+<script src="../js/compponents/createPlan.js" type="module"></script>
+<script src="../js/components/showNewComp.js" type="module"></script>
+<script src="../js/copl.js"></script>
+<script src="../js/services/guard.js" type="module"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
+<script src="../js/compponents/myScript.js"></script>
+
+</body>
+
+</html>

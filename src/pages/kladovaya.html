@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/reset.css">
+  <link rel="stylesheet" href="../style/modal.css">
+  <link rel="stylesheet" href="../style/kladovaya.css">
+  <link rel="stylesheet" href="../style/main.css">
+  <title>учет дефицитных ТМЦ</title>
+</head>
+
+<body>
+  <div class="et-hero-tabs-container">
+
+    <a class="et-hero-tab" href="admin.html">СОЗДАТЬ ПОЛЬЗОВАТЕЛЯ</a>
+    <a class="et-hero-tab btn__komplektovanie" href="komplektovanie.html">КОМПЛЕКТОВАНИЕ</a>
+    <a class="et-hero-tab kladovaya__tab btn__komplektovanie" href="kladovaya.html">КЛАДОВАЯ</a>
+    <a class="et-hero-tab btn__plan" href="plan.html">ПЛАН</a>
+    <a class="et-hero-tab btn__deficite" href="deficite.html">ДЕФИЦИТ</a>
+    <a class="et-hero-tab btn__exit" href="../index.html">ВЫЙТИ</a>
+    <span class="et-hero-tab-slider"></span>
+  </div>
+  <section class="et-slide kladovaya" id="kladovaya">
+
+
+
+
+    <div class="table-nav">
+      <input type="serch" placeholder="Поск..." id="search-text">
+
+      <div class="wrapper">
+        <a href="#" class="open-popup">Добавить</a>
+      </div>
+    </div>
+    <table id="info-table">
+      <thead>
+        <tr>
+          <td>Наименование ПКИ</td>
+          <td>Номеклатурный номер</td>
+          <td>Количество</td>
+          <td>Номер стелажа</td>
+          <td>Номер полки</td>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+
+
+
+    </table>
+
+
+
+
+    <div class="popup__bg">
+      <form class="popup">
+        <svg class="close-popup" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+          <path fill="#2982ff"
+            d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+          </svg>
+        <label>
+          <input type="text" name="name" class="title">
+          <div class="label__text">
+            Наименование
+          </div>
+        </label>
+        <label>
+          <input type="number" name="id" class="productId">
+          <div class="label__text">
+            Номеклатурный номер
+          </div>
+        </label>
+        <label>
+          <input type="number" name="count" class="counter">
+          <div class="label__text">
+            количество
+          </div>
+        </label>
+        <label>
+          <input type="number" name="cupboard" class="shelving">
+          <div class="label__text">
+            стелаж
+          </div>
+        </label>
+        <label>
+          <input type="number" name="shelf" class="shelf">
+          <div class="label__text">
+            полка
+          </div>
+        </label>
+        <button type="submit" class="submit__btn">Добавить</button>
+      </form>
+    </div>
+
+
+
+
+
+  </section>
+  <script src="../js/popup.js" type="module"></script>
+  <script src="../js/tableSearch.js" type="module"></script>
+  <script src="../js/components/serch.js" type="module"></script>
+  <script src="../js/modalAnimation.js"></script>
+  <!-- <script src="../js/services/guard.js" type="module"></script> -->
+    <script src="../js/compponents/showStore.js" type="module"></script>
+
+</body>
+
+</html>
